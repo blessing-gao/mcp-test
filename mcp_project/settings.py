@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'mcp_app',
     'llm_connector',
 ]
+MCP_API_URL = os.getenv('MCP_API_URL', 'http://localhost:8000/api/mcp')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
