@@ -1,21 +1,13 @@
-
-# Django和REST框架
+# 现有的依赖
 Django==4.0.2
 djangorestframework==3.14.0
 django-cors-headers==4.0.0
-
-# 异步HTTP客户端
 httpx==0.25.0
-
-# JWT处理
 pyjwt==2.8.0
-
-# 环境变量管理
 python-dotenv==1.0.0
-
-# ASGI服务器
 uvicorn==0.23.2
 gunicorn==21.2.0
-
-# 其他工具
 python-dateutil==2.8.2
+
+# 添加MinIO客户端
+minio==7.1.17
