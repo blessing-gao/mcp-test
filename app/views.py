@@ -11,7 +11,7 @@ from datetime import timedelta
 # MinIO配置
 MINIO_ENDPOINT = 'shenben.club:9000'
 MINIO_ACCESS_KEY = 'test'
-MINIO_SECRET_KEY = '123456'
+MINIO_SECRET_KEY = 'Ab123456'
 MINIO_SECURE = False  # 如果使用HTTPS，设为True
 
 
@@ -21,7 +21,8 @@ def get_minio_client():
         endpoint=MINIO_ENDPOINT,
         access_key=MINIO_ACCESS_KEY,
         secret_key=MINIO_SECRET_KEY,
-        secure=MINIO_SECURE
+        secure=MINIO_SECURE,
+        http_client = None  # 让MinIO自动创建HTTP客户端
     )
 
 
